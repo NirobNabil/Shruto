@@ -6,11 +6,16 @@
 .uni_mother div{
 	overflow: hidden;
 }
-.intern_form{
+.form{
 	position: relative;
 	height: 100vh;
+	/background-size: contain;
+}
+.intern_form{
 	background: url('../imgFiles/backgrounds/applyPage/dev_intern.jpg');
-	background-size: cover;
+}
+.Cdev_form{
+	background: url('../imgFiles/backgrounds/applyPage/content_dev.jpg');
 }
 .back_img_container{
 	z-index: -1;

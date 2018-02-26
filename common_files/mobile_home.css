@@ -1,0 +1,46 @@
+.top-pic-container{
+    width: 76em;
+    height: 65vw;
+}
+.backstory-container{
+    width: 69em;
+}
+.join_us{
+    width: 76em;
+}
+footer{
+    width: 76em;
+}
+.join_pop_container{
+    width: 76em;
+}
+.go_back{
+    left: 50%;
+}
+.videos{
+    width: 100%;
+    flex-direction: column;
+}
+.video{
+    padding-bottom: 6em;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.video iframe{
+    margin: auto;
+    align-self: center;
+    display: flex;
+    width: 70vw;
+    height: 40vw;
+}
+
+body{
+    width: 76em;  
+} 
+.video_container{
+    background: linear-gradient(rgba(219, 232, 243,1),rgba(219, 232, 243,.9),rgba(219, 232, 243,.8),rgba(219, 232, 243,.1),rgba(219, 232, 243,0));
+    /height: 40em;
+    position: relative;
+    width: 76em;
+}

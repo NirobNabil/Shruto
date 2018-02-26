@@ -1,0 +1,58 @@
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103570543-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+
+
+
+
+
+
+const nav_height = $(".nav_actual").css("height");
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > parseInt($(".navbar").css('height')) / 2) {
+            //console.log(nav_height);
+            $(".nav_actual").css({
+                zIndex: '10',
+                opacity: '0',
+                position: 'fixed',
+                width: '100%',
+                //height: '3.5em',
+                //backgroundColor: '#f2f2f2',
+            });
+            $(".nav_actual > span").addClass("nav_link_back");
+            //$(".nav_link").addClass(".links_fixed");
+            $(".nav_actual").animate({
+                opacity: '1',
+                //height: nav_height,
+            }, 200);
+
+
+        }
+        if ($(window).scrollTop() < parseInt($(".navbar").css('height')) / 2) {
+            $(".nav_links").removeClass("links_fixed");
+            $(".nav_actual").css({
+                opacity: '1',
+                //backgroundColor: 'transparent',
+                position: 'relative'
+            });
+        };
+    });
+    const nav_links_marginLeft = $(".nav_link_back").css("margin-left");
+    //console.log(nav_links_marginLeft);
+    $(".nav_link").hover(function () {
+        //$(".nav_links > span").addClass("nav_link_back");
+        $(".nav_link_back").stop();
+        $(".nav_link_back").animate({
+            opacity: '1',
+            width: $(this).css('width'),
+            opacity: '1',
+            marginLeft: parseInt(nav_links_marginLeft) + parseInt($(this).offset().left) - parseInt($(".nav_links").offset().left) + parseInt($(this).css('width')) + 'px'
+        }, 300);
+    })

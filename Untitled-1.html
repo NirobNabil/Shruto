@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    
+    <script src="jquery-3.1.1.js" type="text/javascript"></script>
+</head>
+<body> 
+
+<a href="#" id="pause">Pause</a>
+<a href="#" id="resume">Resume</a>
+<div id="youtube_player" class="yt_player_iframe"></div>
+<ul class="list"><li> <h1 class="liname">পর্ব ১</h1> <div class="iframe"><iframe  src="https://www.youtube.com/embed/_zuIO2BWdkc?&theme=dark&autohide=2&modestbranding=1&fs=0&showinfo=0&rel=0"frameborder="0"></iframe></div> </li> <li> <h1 class="liname">পর্ব ২</h1> <div class="iframe"><iframe  src="https://www.youtube.com/embed/hWSyrlWDlIw?&theme=dark&autohide=2&modestbranding=1&fs=0&showinfo=0&rel=0"frameborder="0"></iframe></div> </li> <li> <h1 class="liname">পর্ব ৩</h1> <div class="iframe"><iframe  src="https://www.youtube.com/embed/65cFfwQqeLo?&theme=dark&autohide=2&modestbranding=1&fs=0&showinfo=0&rel=0"frameborder="0"></iframe></div> </li> <li> <h1 class="liname">পর্ব ৪</h1> <div class="iframe"><iframe  src="https://www.youtube.com/embed/6u6W1e3mE2M?&theme=dark&autohide=2&modestbranding=1&fs=0&showinfo=0&rel=0"frameborder="0"></iframe></div> </li></ul>
+<script>
+    
+
+//var string = $(".gg").attr('src').replce(/embed\/([\w+\-+]+)[\"\?]/);
+
+var url = document.getElementsByClassName('iframe')[0].childNodes[0].src,
+    regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/,
+    videoId = url.match(regExp);
+
+    console.log(videoId[1]);
+if (videoId && videoId[1].length === 11) {
+    //console.log(videoId[1]);
+}
+    
+//var start = string.search('watch?v') ;
+//console.log(start);
+//console.log($(".gg").attr('src'));
+    
+
+//load the IFrame Player API code asynchronously
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+//will be youtube player references once API is loaded
+var players = [];
+
+//gets called once the player API has loaded
+function onYouTubeIframeAPIReady() {
+    console.log("loaded and called");
+    $('.yt_player_iframe').each(function() {
+        console.log(" worked!")
+        var frame = $(this);
+
+        //create each instance using the individual iframe id
+        player = new YT.Player('youtube_player', {
+          height: '360',
+          width: '640',
+          videoId: videoId[1],
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+        console.log(player);
+
+        players.push(player);
+    });
+}
+    
+function onPlayerReady(event) {
+    console.log('ready');
+
+  // bind events
+  var playButton = document.getElementById("resume");
+  playButton.addEventListener("click", function() {
+    player.playVideo();
+  });
+
+  var pauseButton = document.getElementById("pause");
+  pauseButton.addEventListener("click", function() {
+    player.pauseVideo();
+  });
+
+}
+
+
+//global stop button click handler
+/*$('#pause').click(function(){
+
+    //loop through each Youtube player instance and call stopVideo()
+    for (var i in players) {
+        var player = players[i];
+        player.stopVideo();
+    }
+});*/
+</script>
+
+
+
+</body> 
+</html>

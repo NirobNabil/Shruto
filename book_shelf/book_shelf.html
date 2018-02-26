@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="BN">
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="book_shelf.css">
+    <link rel="stylesheet" type="text/css" href="../common_files/navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="../common_files/footer.css">
+    <script src="..\common_files\jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="book_shelf.js"></script>
+    <link rel="icon" href="..\icons\logo.png">
+</head>
+
+<body>
+    <div class="landpage">
+        <div class="navbar">
+            <ul class="nav_actual">
+                <li class="logo"><img src="logo.png" class="logo-main">
+                    <p> দৃষ্টি এবার মিলবে বইয়ে </p>
+                </li>
+                <li>
+                    <ul class="contacts">
+                        <li class="phone">
+                            <p><span><img class="icon" src="icons/006-auricular-phone-symbol-in-a-circle.svg"></span>01689156188</p>
+                        </li>
+                        <li class="email">
+                            <p><span><img class="icon" src="icons/002-envelope-of-white-paper.svg"></span>info.shruto@gmail.com</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav_links">
+                        <span class="nav_link_back"></span>
+                        <a href="..\index.html"><li class="nav_link"><a href="..\index.html"> হোম </a><span class="nav_border"></span></li></a>
+                        <a href="..\book_shelf\book_shelf.html"><li class="nav_link"><a href="..\book_shelf\book_shelf.html">  বইয়ের তাক</a> <span class="nav_border"></span></li></a>
+                        <a href="..\volunteering_voice\vol.html"><li class="nav_link"><a href="..\volunteering_voice\vol.html"> স্বেচ্ছাসেবী কন্ঠ </a><span class="nav_border"></span></li></a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="tip_container">
+    	<div class="title">
+    		<h3>Using voice mood</h3>
+    		<!--
+    		<div class="arrow">
+    			<img src="../downwardarrow.png">
+    		</div>
+    		-->
+    	</div>
+    	<div class="tip_content hide">
+    	<ul>
+    		<li>
+    			<ul>
+					<h4>Enable/Disable voice mood</h4>
+   					<li>press ctrl button 3 times to enable voice mode</li>
+   					<li>press shift button 3 times to disable voice mode</li>
+    			</ul>
+			</li>
+   			<li>
+    			<ul>
+					<h4>navigating voice mood</h4>
+   					<li>use up & down arrow keys to navigate episodes</li>
+   					<li>use left & right arrow keys to navigate books</li>
+    			</ul>
+			</li>
+   			<li>
+    			<ul>
+					<h4>using the player</h4>
+   					<li>press spacebar to play/pause video</li>
+    			</ul>
+    		</li>
+    	</ul>
+    	</div>
+    </div>
+
+
+    <div class="books-container">
+        <div class="wrapper">
+            <div class="arrow-up"></div>
+            <div class="active-book">
+                <h2 class="tx"> Tituni and Tituni </h2>
+                <span class="span-book"></span>
+                <div class="content-container">
+                    <img class="bookimg" src="books\tituni and tituni.jpg">
+                    <div class="book-description">
+                        <!--<h2 class="designation_ab">লেখকঃ</h2>-->
+                        <h2 class="writer_ab">মুহম্মদ জাফর ইকবাল</h2>
+                        <p> </p>
+                    </div>
+                    
+                    
+                    <div class="list-wrapper">
+                        <ul class="list">
+                            <li>
+                                <h1 class="liname">Something went wrong or the books is not available yet</h1>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="keyonly_mode_player">
+            <div class="player" id="main_player"></div>
+        </div>
+        <!--<a href="#" id="pause">Pause</a>
+        <a href="#" id="resume">Resume</a>-->
+        
+        
+        <div class="books-mother">
+            <div class="lib_war">
+                <h1 class="category-title"> মুক্তিযুদ্ধ </h1>
+                <span class="span-book"></span>
+                <ul class="books">
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\chotoder muktijuddher itihash.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2>ছোটদের মুক্তিযুদ্ধের ইতিহাস </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/banglarshreshthashontanera.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> বাংলার শ্রেষ্ঠ সন্তানেরা</h2>
+                            <h6> লেখিকাঃ প্রফেসর ফিরোজা বেগম </h6>
+                        </div>
+
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\ekattorerchithi.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> একাত্তরের চিঠি </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\ekattorerdinguli.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> একাত্তরের দিনগুলি </h2>
+                            <h6> লেখিকাঃ জাহানারা ইমাম </h6>
+                        </div>
+
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\ekattorebongamarbaba.jpeg">
+                        </div>
+                        <div class="book-title">
+                            <h2> একাত্তর এবং আমার বাবা </h2>
+                            <h6> লেখকঃ হুমায়ন আহমেদ </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/amarbondhurashed.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> যখন পলাতক মুক্তিযুদ্ধের দিনগুলি </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="biography">
+                <h1 class="category-title"> আত্মজীবনী </h1>
+                <span class="span-book"></span><br>
+                <ul class="books">
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\wingsoffire.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> উইংস অব ফায়ার </h2>
+                            <h6> লেখকঃ এ. পি. জে. আবদুল কালাম <br> অনুবাদঃ প্রমিত হোসেন </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\jokhonchotochilam.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> যখন ছোট ছিলাম </h2>
+                            <h6> লেখকঃ সত্যজিৎ রায় </h6>
+                        </div>
+                    </li> 
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/anafrankerdiary.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> আনা ফ্রাঙ্কের ডায়েরি </h2>
+                            <h6> লেখকঃ গোলাম মুরশিদ </h6>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+            
+            <div class="fiction">
+                <h1 class="category-title"> বিজ্ঞান কল্পকাহিনী </h1><br>
+                <span class="span-book"></span><br>
+                <ul class="books">
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\tituni and tituni.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> তিতুনি এবং তিতুনি </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\chrenial.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> ক্রেনিয়াল </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books\gabbu.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> গাব্বু </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/mohajagotikqurator.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> মহাজাগতিক কিউরেটর </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/serina.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> সেরিনা </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                    
+            
+            <div class="novel">
+                <h1 class="category-title"> উপন্যাস </h1><br>
+                <span class="span-book"></span>
+                <ul class="books">
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/ramersumoti.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> রামের সুমতি </h2>
+                            <h6> লেখকঃ শরৎচন্দ্র চট্টোপধ্যায় </h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="teen_novel">
+                <h1 class="category-title"> কিশোর উপন্যাস </h1><br>
+                <span class="span-book"></span>
+                <ul class="books">        
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/rohosyooatonkergolpo-2016.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> রহস্য ও আতঙ্কের গল্প </h2>
+                            <h6> লেখকঃ এডগার অ্যালান পো
+                                    গল্পঃ হৃদপিন্ডের শব্দ</h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/foteng.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> ফটেং </h2>
+                            <h6> লেখকঃ ধ্রুব নীল </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/amarbondhurashed.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> আমার বন্ধু রাশেদ </h2>
+                            <h6> লেখকঃ মুহম্মদ জাফর ইকবাল </h6>
+                        </div>
+                    </li>
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/allquiteonthewesternfront.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> All quite on the western front </h2>
+                            <h6> লেখকঃ Erich Maria Remarquea </h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bangladesh_science_society">
+                <h1 class="category-title"> bangladesh science society </h1><br>
+                <span class="span-book"></span>
+                <ul class="books"> 
+                    <li class="book">
+                        <div class="book-img">
+                            <img class="bookimg" src="books/bangladeshsciencesociety.jpg">
+                        </div>
+                        <div class="book-title">
+                            <h2> Bangladesh Science Society </h2>
+                            <h6> লেখকঃ N/A </h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    
+    <!--<form>
+        <input id="convert0"><br>
+        <h1 class="button2">convert1</h1>
+        <p class="gg0"></p>
+        
+        <hr>
+        
+        <input id="convert">
+        <h1 class="button1"> convert </h1>
+        <p class="gg"></p>
+    </form>-->
+    </body>
+</html>

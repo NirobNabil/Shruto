@@ -1,0 +1,266 @@
+/*identities part*/
+.identity_container{
+	background: url(background.svg);
+	width: 100em;
+	height: 40em;
+	display: flex;
+	flex-direction: column;
+}
+.identity_container .side_image img{
+	width: 30em;
+	position: absolute;
+	left: 10em;
+	top: 8em;
+	visibility: hidden;
+}
+.identity_container .form_stuff_container{
+	width: 35%;
+	height: 100%;
+	justify-content: center;
+	flex-direction: row;
+	align-self: flex-end;
+	/border: 1px solid black;
+	position: relative;
+}
+.identity_container .form_stuff_container .form_stuff{
+	margin-top: 20%;
+	margin-left: 10%;
+	width: 80%;
+	position: relative;
+	/border: 1px solid black;
+	align-self: center;
+}
+.identity{
+	opacity: 0.9;
+	padding: 1em;
+	margin-top: 1em;
+	width: 100%;
+}
+.selection_container label{
+	padding-top: .6em;
+	/padding-left: .2em;
+	/padding-bottom: .3em;
+	font-size: 130%;
+	font-family: monospace;
+}
+.selection{
+	margin-left: 1em;
+	padding: 1em;
+	position: relative;
+	width: 100%;
+	opacity: .9;
+}
+
+
+/*links part*/
+.links_container{
+	background-image: url(background2.svg);
+	background-size: cover;
+	position: relative;
+	width: 100em;
+	/height: auto;
+	/border: 10em solid;
+}
+
+.links_container .form_stuff_container{
+	position: relative;
+	padding-top: 5em;
+	padding-left: 5%;
+	width: 60%;
+}
+.links_heading{
+	position: relative;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+.links_heading::after{
+	content: "";
+	position: absolute;
+	height: .06em;
+	width: 100%;
+	background-color: black;
+	top: 110%;
+	left: 0%;
+}
+.input_container{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+.input_container input{
+	font-family: sans-serif;
+	padding: .7em;
+	margin-top: 1em;
+}
+
+
+
+/*skills part*/
+.skill_container{
+	display: flex;
+	justify-content: center;
+	background-image: url(background4.svg);
+	background-size: cover;
+	min-height: 30em;
+	width: 100%;
+	font-size: 1.1em;
+}
+.skill_container .form_stuff_container{
+	position: relative;
+	padding-top: 3em;
+}
+.skills_heading{
+	font-family: sans-serif;
+	font-size: 1.4em;
+}
+.skill_container .form_stuff_container .form_stuff{
+	
+}
+.skill_container .form_stuff_container .form_stuff input{
+	transform:  scale(1.1);
+	margin-right: 1em;
+}
+
+
+
+
+
+
+
+
+body{
+	margin-left: 0;
+	margin-top: 0;
+	position: relative;
+}
+/* setting backgrounds */
+.identity_container{
+	background-image: url(background.svg);
+}
+.vol_form{
+	width: 100em;
+	position: relative;
+}
+
+.input_container{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+input{
+	font-family: sans-serif;
+}
+.selection_container{
+	margin-top: 1em;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.2em;
+}
+.vol_form select{
+	opacity: 0.7;
+	width: 50%;
+}
+option{
+	opacity: 0.5;
+}
+
+/* button to add new fields */
+.add_butt_container{
+	display: flex;
+}
+.add_butt_container input{
+	margin-left: 1em;
+	padding-left: .5em;
+}
+.add_field{
+	text-align: center;
+	min-width: 8em;
+	display: flex;
+    padding-left: .6em;
+	padding-top: .6em; 
+	padding-bottom: .6em; 
+    cursor: pointer;
+    background-color: #dedede;
+    border: .05em solid #352e2b;
+	border-radius: .2em;
+	transition: .2s;
+	color: black;
+}
+.add_field:hover{
+	box-shadow: .001em .001em .2em .0em black inset;
+}
+
+
+
+/* styling skills */
+.skills_container{
+	display: flex;
+	flex-direction: column;
+	/background: green;
+}
+
+.platforms_container{
+	flex-direction: column;
+	/border: 1px solid black;
+}
+.platform_container{
+	flex-direction: column;
+	/border: 1px solid black;
+}
+
+.show{
+	display: flex;
+}
+.hide{
+	display: none;
+}
+
+.langs_container{
+	flex-direction: column;
+	/background: pink;
+}
+
+.frames_container{
+	flex-direction: column;
+	/width: 40em;
+	/background: red;
+}
+
+.container{
+	/margin-left: .5em;
+	padding-top: .5em;
+	padding-left: 1em;
+	padding-bottom: .5em;
+}
+
+/*submit part*/
+.submit_container{
+	min-width: 100em;
+	height: 7em;
+	background: url(background5.svg);
+	display: flex;
+	justify-content: center;
+}
+.submit_button{
+	display: flex;
+	justify-content: center;
+}
+.submit_button input{
+	margin-top: 10%;
+	height: 50%;
+	width: 15em;
+	font-size: 1.1em;
+	font-family: sans-serif;
+	background: rgba(0,0,0,.1);
+	border-radius: .5em;
+	border: 1px solid;
+	transition: .2s;
+}
+.submit_button input:hover{
+	background: rgba(255,255,255,.1);
+	border: 2px solid;
+	cursor: pointer;
+}
+
+

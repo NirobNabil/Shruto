@@ -1,0 +1,318 @@
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.landpage {
+    z-index: 10;
+    position: fixed;
+    height: 4.5em;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/*/////////////////// top-pic ////////////////////////*/
+
+.top-pic-container {
+    /top: 4.5em;
+    /position: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 45vw;
+    /background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1))
+}
+
+.top-pic {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    top: 3.5em;
+    z-index: -1;
+    align-self: center;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+}
+
+.top-text h1 {
+    /font-family: backstory;
+    font-weight: bolder;
+    font-size: 4em;
+    align-self: center;
+    color: #352e2b;
+}
+
+.top-text p {
+    font-family: backstory;
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.2em;
+    align-self: center;
+}
+
+
+.main-content {
+    position: relative;
+    top: 4vw;
+    /z-index: 2;
+    background: white;
+}
+
+.backstory-container {
+    position: relative;
+    padding: 4em;
+    background: #f1f1f1;
+}
+
+@font-face{
+    font-family: backstory;
+    src: url('BenSenHandwriting.ttf');
+}
+
+.backstory-container h1 {
+    font-family: backstory;
+    color: #94a01d;
+    /color: #cddc39;
+    font-weight: 500;
+    font-size: 3em;
+}
+
+.backstory-container {
+    font-size: 1.1em;
+    color: #48442d;
+    font-weight: 300;
+}
+
+
+.link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-box {
+    border: 1px solid black;
+    padding: 1.3em;
+    margin-top: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 20em;
+}
+
+.link-box h2 {
+    font-weight: 200;
+}
+
+.link-box img {
+    width: 100%;
+    max-height: 10em;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 20em;
+    background: rgb(40, 99, 0);
+    z-index: 20;
+}
+
+.heading {
+    color: #f1f1f1;
+    padding-top: 1em;
+    padding-left: 2em;
+    font-size: 1.7em;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer_logo{
+    position: absolute;
+    left: 3em;
+}
+
+/******* join us *********/
+
+
+.join_us{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 6.5em;
+    padding: 2em;
+}
+
+.join_button{
+    color: white;
+    border: .1em solid white;
+    border-radius: .6em;
+    padding: 1.4em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background: #8BC34A;
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+.join_button:hover{
+    color: #8BC34A;
+    background: transparent;
+    border-color: #8BC34A;
+    cursor: pointer;
+}
+
+.join_button span{
+    font-size: 1.2em;
+}
+
+/******* join pop *********/
+
+.join_pop_container{
+    position: relative;
+    /visibility:hidden;
+    display: flex;
+    justify-content: center;
+    transition: 7s;
+    /top: -100vh;
+    /overflow: hidden;
+}
+
+.join_pop{
+    overflow: hidden;
+    max-height: 40em;
+    align-items: center;
+    height: 83vh;
+    position: fixed;
+    padding: 2em;
+    width:95vw;
+    /top: 6em;
+    top: -100vh;
+    z-index: 30;
+    background: #e2e2e2;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.join_pop_sliding{
+    /visibility: visible;
+    top: 6em;
+}
+
+.join_pop_head span{
+    font-size: 1.2em;
+}
+
+.join_pop_head{
+    margin-top: -2em;
+    margin-left: -2em;
+    padding: 2em;
+    width: 120%;
+    background: #8BC34A;
+}
+
+
+/******* videos *********/
+
+.video_container{
+    background: linear-gradient(rgba(219, 232, 243,1),rgba(219, 232, 243,.9),rgba(219, 232, 243,.8),rgba(219, 232, 243,.1),rgba(219, 232, 243,0));
+    /height: 40em;
+    position: relative;
+    width: 100vw;
+}
+
+.video_heading{
+    background: rgba(219, 232, 243,1);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.video_heading h1{
+    font-size: 2.6em;
+}
+
+.videos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+    justify-content: space-between;
+}
+
+.video iframe{
+    width: 40vw;
+    height: 22.5vw;
+    /padding: 10em;
+}
+
+
+
+.go_back{
+    border-radius: .1em;
+    transition: .3s;
+    padding: .8em;
+    position: relative;
+    left: 63%;
+}
+
+.go_back:hover{
+    cursor: pointer;
+    border: .08em solid black;
+}
+
+.join_pop_body p:nth-child(3){
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.join_pop_body p:nth-child(3) span{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.join_pop_body h5{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+
+
+
+blockquote {
+  background: rgba(249, 249, 249, 0.31);
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+  display: inline;
+}
+
+
+
+@media screen and (max-width: 1140px) and (min-width: 2810px) {
+     .top-pic-container{
+         width: 120vw;
+     }
+     
+    .backstory-container{
+        width: 120vw;
+    }
+}

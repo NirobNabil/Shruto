@@ -1,0 +1,56 @@
+
+.landpage{
+	width: 100vw;
+	position: absolute;
+}
+.uni_mother div{
+	overflow: hidden;
+}
+.intern_form{
+	position: relative;
+	height: 100vh;
+	background: url('../imgFiles/backgrounds/applyPage/dev_intern.jpg');
+	background-size: cover;
+}
+.back_img_container{
+	z-index: -1;
+	position: absolute;
+}
+.some_words_container{
+	align-self: center;
+	color: white;
+	font-family: 'Anton', sans-serif;
+	font-weight: normal;
+	padding: 1em;
+	
+}
+.some_words_container .title{
+	font-size: 3em;
+	color: white;
+	font-family: 'Anton', sans-serif;
+	font-weight: normal;
+}
+.form_content{
+	/border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 25%;
+	width: 50%;
+	height: 100%;
+	justify-content: center;
+}
+.button{
+	color: white;
+	font-size: 1.2em;
+	align-self: center;
+	border: 1px solid green;
+	padding: 1em;
+	background: rgba(0,0,0,.2);
+	border-radius: 2em;
+	transition: .3s;
+}
+.button:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,.5)
+}

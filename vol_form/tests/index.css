@@ -1,0 +1,208 @@
+.background{
+	position: fixed;
+	z-index: -1;
+}
+body{
+	margin-left: 0;
+	margin-top: 0;
+	position: relative;
+}
+/* setting backgrounds */
+.identity_container{
+	background-image: url(background.svg);
+}
+@media only screen and (max-width: 600px) {
+	.vol_form{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		position: relative;
+	}
+	.links .input_container{
+		font-size: 1.1em;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.links .input_container label{
+		padding: .3em;
+	}
+	.links .input_container input{
+		width: 80%;
+		padding: .8em;
+		color: #333333;
+	}
+	.vol_form_container{
+		margin-left: .5em;
+		width: 100%;
+		position: relative;
+		top: 3em;
+	}
+	.identity{
+		opacity: 0.9;
+		padding: 1em;
+		margin-top: 1em;
+		width: 80%;
+	}
+	.selection_container{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+	.selection_container label{
+		padding-top: .5em;
+		padding-left: .2em;
+		padding-bottom: .3em;
+		font-size: 1.2em;
+	}
+	.selection{
+		color: grey;
+		opacity: 0.9;
+		padding: 1em;
+	}
+	.links_heading{
+		position: relative;
+		font-size: 1.3em;
+		font-weight: 100;
+	}
+	.links_heading::after{
+		content: "";
+		position: absolute;
+		height: .06em;
+		width: 100%;
+		background-color: black;
+		top: 110%;
+		left: 0%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.vol_form_container{
+		display: flex;
+		/justify-content: flex-end;
+		margin-top: 10em;
+		margin-left: 1em;
+		width: 100%;
+		position: relative;
+		top: 3em;
+	}
+	.vol_form{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 60em;
+		width: 40%;
+	}
+	.identity{
+		opacity: 0.9;
+		padding: 1em;
+		margin-top: 1em;
+		width: 70%;
+	}
+	.selection_container label{
+		padding-top: .5em;
+		padding-left: .2em;
+		padding-bottom: .3em;
+		font-size: 1.1em;
+	}
+	.selection{
+		margin-left: 2em;
+		padding: 1em;
+	}
+	.input_container{
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+	}
+	input{
+		font-family: sans-serif;
+	}
+	.selection_container{
+		margin-top: 1em;
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		font-size: 1.2em;
+	}
+	.vol_form select{
+		opacity: 0.7;
+		width: 50%;
+	}
+	option{
+		opacity: 0.5;
+	}
+}
+
+/* button to add new fields */
+.add_butt_container{
+	display: flex;
+}
+.add_butt_container input{
+	margin-left: 1em;
+	padding-left: .5em;
+}
+.add_field{
+	text-align: center;
+	min-width: 8em;
+	display: flex;
+    padding-left: .6em;
+	padding-top: .6em; 
+	padding-bottom: .6em; 
+    cursor: pointer;
+    background-color: #dedede;
+    border: .05em solid #352e2b;
+	border-radius: .2em;
+	transition: .2s;
+	color: black;
+}
+.add_field:hover{
+	box-shadow: .001em .001em .2em .0em black inset;
+}
+
+
+
+/* styling skills */
+.skills div,input{
+	/display: none
+}
+
+.skills_container{
+	display: flex;
+	flex-direction: column;
+	/background: green;
+}
+
+.platforms_container{
+	flex-direction: column;
+	/border: 1px solid black;
+}
+.platform_container{
+	flex-direction: column;
+	/border: 1px solid black;
+}
+
+.show{
+	display: flex;
+}
+.hide{
+	display: none;
+}
+
+.langs_container{
+	flex-direction: column;
+	/background: pink;
+}
+
+.frames_container{
+	flex-direction: column;
+	/width: 40em;
+	/background: red;
+}
+
+.container{
+	/margin-left: .5em;
+	padding-top: .5em;
+	padding-left: 1em;
+	padding-bottom: .5em;
+}
